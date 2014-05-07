@@ -9,13 +9,13 @@ require 'date'
 # █████████████████████████
 
 PATTERN = <<-EOF.split("\n").map{|line| line.split(//)}.transpose.map(&:join).join
-XXXXXXXXXXXXXXXXXXXXXXXXX
-X XXX X     X  XXXX  XXXX
-X XXX XXX XXX  XXXX  XXXX
-X X X XXX XXX  XXXX  XXXX
-X X X XXX XXX  XXXX  XXXX
-X     X     X     X     X
-XXXXXXXXXXXXXXXXXXXXXXXXX
+                                
+         X X             
+        XXXXX          
+        XXXXX           
+         XXX        
+          X            
+                                     
 EOF
 
 MASK = PATTERN.split(//).map{|c| c == 'X'}
